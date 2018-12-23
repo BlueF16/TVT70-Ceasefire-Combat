@@ -8,11 +8,11 @@ class EditorData
 	toggles=618;
 	class ItemIDProvider
 	{
-		nextID=5075;
+		nextID=5084;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1132;
+		nextID=1140;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11212.886,52.025742,5162.4058};
-		dir[]={-0.83029556,-0.48616108,0.27254194};
-		up[]={-0.46192622,0.87385976,0.15162587};
-		aside[]={0.31187746,6.4392225e-008,0.95013475};
+		pos[]={10235.882,31.150866,9651.9902};
+		dir[]={0.87292469,-0.44448709,-0.20119731};
+		up[]={0.43313771,0.89578211,-0.099832766};
+		aside[]={-0.22460133,-1.1076409e-006,-0.9744752};
 	};
 };
 binarizationWanted=0;
@@ -497,7 +497,7 @@ class ScenarioData
 	class Header
 	{
 		gameType="TDM";
-		minPlayers=60;
+		minPlayers=54;
 		maxPlayers=70;
 	};
 	wreckRemovalMaxTime=3600;
@@ -878,29 +878,27 @@ class Mission
 	class Intel
 	{
 		briefingName="TVT70 Ceasefire Combat V4";
-		overviewText="UKR Forces defend against attacking Sepratists.  BLUFOR:OPFOR = 2:3";
-		startWeather=0.56777352;
+		overviewText="UKR Forces defend against attacking Separatists  BLUFOR:OPFOR = 2:3";
+		startWeather=0.5042358;
 		startFog=0.15428191;
 		startWind=0.2;
 		startWindDir=314;
-		startRain=0.12724501;
-		startLightnings=1;
 		forecastWeather=0.32633016;
 		forecastWind=0.1;
 		forecastWaves=0;
-		lightningsForced=1;
+		rainForced=1;
 		windForced=1;
 		year=2018;
 		month=10;
 		day=28;
 		hour=17;
-		minute=0;
+		minute=-9;
 		startFogDecay=0;
 		forecastFogDecay=0;
 	};
 	class Entities
 	{
-		items=56;
+		items=64;
 		class Item0
 		{
 			dataType="Layer";
@@ -44277,7 +44275,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={10468.688,55.160244,8427.8389};
+						position[]={10468.703,55.16024,8427.8662};
 					};
 					areaSize[]={1,-1,1};
 					id=4582;
@@ -44861,6 +44859,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="UKR FORCES";
+			state=1;
 			class Entities
 			{
 				items=12;
@@ -45583,6 +45582,7 @@ class Mission
 						formation="COLUMN";
 					};
 					id=3848;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46592,6 +46592,7 @@ class Mission
 						formation="COLUMN";
 					};
 					id=3853;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -47457,6 +47458,7 @@ class Mission
 						formation="COLUMN";
 					};
 					id=3861;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48183,6 +48185,7 @@ class Mission
 						formation="COLUMN";
 					};
 					id=3868;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48532,6 +48535,7 @@ class Mission
 					{
 					};
 					id=3874;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48844,6 +48848,7 @@ class Mission
 					{
 					};
 					id=3877;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48880,7 +48885,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={11142.98,11.98459,5171.5439};
+								position[]={11142.98,11.984897,5171.5439};
 								angles[]={6.2782984,0,6.282208};
 							};
 							side="West";
@@ -48894,7 +48899,7 @@ class Mission
 							};
 							id=3881;
 							type="B_crew_F";
-							atlOffset=0.024999619;
+							atlOffset=0.025306702;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -49158,7 +49163,7 @@ class Mission
 					{
 					};
 					id=3880;
-					atlOffset=0.024999619;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -51100,7 +51105,7 @@ class Mission
 				};
 			};
 			id=3845;
-			atlOffset=-8.2291527;
+			atlOffset=-58.792503;
 		};
 		class Item9
 		{
@@ -54820,7 +54825,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="call{[this, ""REB_PL"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio;}";
+								init="call{[this, ""REB_PL"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio;}";
 								description="Platoon Commander | Lotos 24 CMD@Lotos 24 | 2 PLT HQ";
 								isPlayable=1;
 							};
@@ -54978,7 +54983,7 @@ class Mission
 							{
 								skill=0.44999999;
 								rank="SERGEANT";
-								init="call{[this, ""REB_PSG"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio;}";
+								init="call{[this, ""REB_PSG"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio;}";
 								description="Assitant Platoon Commander | Lotos 24 CMD";
 								isPlayable=1;
 							};
@@ -55134,7 +55139,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{[this, ""REB_MED"",""Lotos 24 CMD""] call FNC_GearScript;}";
+								init="call{[this, ""REB_MED"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio;}";
 								description="Medic | Lotos 24 CMD";
 								isPlayable=1;
 							};
@@ -55586,7 +55591,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_ATGM"",""Lotos 24 CMD""] call FNC_GearScript;}";
+								init="call{[this, ""REB_ATGM"",""Lotos 24 CMD""] call FNC_GearScript; [this, ""ACRE_PRC343"",5] call FNC_SetRadio;}";
 								description="ATGM Assistant | Lotos 24 CMD";
 								isPlayable=1;
 							};
@@ -56071,7 +56076,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{[this, ""REB_SL"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_SL"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="Squad Leader | Lotos 24@Lotos 24 | 1 Squad";
 								isPlayable=1;
 							};
@@ -56541,7 +56546,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{[this, ""REB_RPG"",""Lotos 24""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPG"",""Lotos 24""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Grenadier | Lotos 24";
 								isPlayable=1;
 							};
@@ -56698,7 +56703,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_RPGASST"",""Lotos 24""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPGASST"",""Lotos 24""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Assistant | Lotos 24 ";
 								isPlayable=1;
 							};
@@ -56835,7 +56840,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{[this, ""REB_RFAT"",""Lotos 24""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RFAT"",""Lotos 24""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
 								description="AT Rifleman | Lotos 24";
 								isPlayable=1;
 							};
@@ -57150,7 +57155,7 @@ class Mission
 							{
 								skill=0.40000001;
 								rank="CORPORAL";
-								init="call{[this, ""REB_GNR"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio;}";
+								init="call{[this, ""REB_GNR"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio; [this, ""GREEN""] call FNC_SetTeamColor;}";
 								description="BTR Gunner | Lotos 24 ";
 								isPlayable=1;
 							};
@@ -57299,7 +57304,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10279.298,17.843964,9651.1543};
+								position[]={10279.298,17.843964,9651.1533};
 								angles[]={0,3.1415927,0};
 							};
 							side="East";
@@ -57307,7 +57312,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_DRVR"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio;}";
+								init="call{[this, ""REB_DRVR"",""Lotos 24""] call FNC_GearScript; [this, ""ACRE_PRC343"",1] call FNC_SetRadio; [this, ""GREEN""] call FNC_SetTeamColor;}";
 								description="BTR Driver | Lotos 24 ";
 								isPlayable=1;
 							};
@@ -57477,7 +57482,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="call{[this, ""REB_SL"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_SL"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="Squad Leader | Lotos 25@Lotos 25 | 2 Squad";
 								isPlayable=1;
 							};
@@ -57785,7 +57790,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10295.762,17.940945,9647.1152};
+								position[]={10295.893,17.942314,9644.6074};
 								angles[]={0,3.1415927,0.01171116};
 							};
 							side="East";
@@ -57798,7 +57803,6 @@ class Mission
 							};
 							id=3963;
 							type="rhs_msv_armoredcrew";
-							atlOffset=0.00016212463;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -57949,7 +57953,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{[this, ""REB_RPG"",""Lotos 25""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPG"",""Lotos 25""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Grenadier | Lotos 25";
 								isPlayable=1;
 							};
@@ -58099,7 +58103,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10293.615,17.900635,9646.8613};
+								position[]={10295.646,17.916437,9646.2949};
 								angles[]={0,3.1415927,0.033196162};
 							};
 							side="East";
@@ -58107,13 +58111,13 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_RPGASST"",""Lotos 25""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPGASST"",""Lotos 25""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Assistant | Lotos 25";
 								isPlayable=1;
 							};
 							id=3965;
 							type="rhs_msv_emr_grenadier_rpg";
-							atlOffset=-0.01499939;
+							atlOffset=-0.023000717;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -58264,7 +58268,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{[this, ""REB_RFAT"",""Lotos 25""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RFAT"",""Lotos 25""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
 								description="AT Rifleman | Lotos 25";
 								isPlayable=1;
 							};
@@ -58553,7 +58557,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10295.757,17.946262,9645.6787};
+								position[]={10295.931,17.939772,9649.208};
 								angles[]={0,3.1415927,0.033196162};
 							};
 							side="East";
@@ -58562,13 +58566,13 @@ class Mission
 							{
 								skill=0.40000001;
 								rank="CORPORAL";
-								init="call{[this, ""REB_GNR"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_GNR"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio; [this, ""GREEN""] call FNC_SetTeamColor;}";
 								description="BTR Gunner | Lotos 25";
 								isPlayable=1;
 							};
 							id=3968;
 							type="rhs_msv_emr_machinegunner";
-							atlOffset=0.0055370331;
+							atlOffset=-0.0030002594;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -58712,7 +58716,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10294.595,17.902281,9649.1094};
+								position[]={10294.595,17.902107,9649.1094};
 								angles[]={6.2636552,3.1415927,0.033196162};
 							};
 							side="East";
@@ -58720,13 +58724,13 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_DRVR"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio;}";
+								init="call{[this, ""REB_DRVR"",""Lotos 25""] call FNC_GearScript; [this, ""ACRE_PRC343"",2] call FNC_SetRadio; [this, ""GREEN""] call FNC_SetTeamColor;}";
 								description="BTR Driver | Lotos 25";
 								isPlayable=1;
 							};
 							id=3969;
 							type="rhs_msv_emr_machinegunner_assistant";
-							atlOffset=-0.02482605;
+							atlOffset=-0.024999619;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -58915,7 +58919,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{[this, ""REB_SL"",""Lotos 26""] call FNC_GearScript; [this, ""ACRE_PRC343"",3] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_SL"",""Lotos 26""] call FNC_GearScript; [this, ""ACRE_PRC343"",3] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="Squad Leader | Lotos 26@Lotos 26 | 3 Squad";
 								isPlayable=1;
 							};
@@ -59222,7 +59226,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10313.324,18.516691,9647.4258};
+								position[]={10313.324,18.516708,9647.4258};
 								angles[]={0,3.1415927,0.062412973};
 							};
 							side="East";
@@ -59235,7 +59239,7 @@ class Mission
 							};
 							id=3973;
 							type="rhs_msv_armoredcrew";
-							atlOffset=0.0059833527;
+							atlOffset=0.0060005188;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -59380,13 +59384,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10309.956,18.301582,9648.4805};
-								angles[]={0,3.1415927,0.031239824};
+								angles[]={0,3.1415927,0.031241393};
 							};
 							side="East";
 							flags=4;
 							class Attributes
 							{
-								init="call{[this, ""REB_RPG"",""Lotos 26""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPG"",""Lotos 26""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Grenadier | Lotos 26";
 								isPlayable=1;
 							};
@@ -59543,7 +59547,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.40000001;
-								init="call{[this, ""REB_RPGASST"",""Lotos 26""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RPGASST"",""Lotos 26""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
 								description="RPG Assistant | Lotos 26 ";
 								isPlayable=1;
 							};
@@ -59699,7 +59703,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{[this, ""REB_RFAT"",""Lotos 26""] call FNC_GearScript; [this, ""RED""] call FNC_SetTeamColor;}";
+								init="call{[this, ""REB_RFAT"",""Lotos 26""] call FNC_GearScript; [this, ""BLUE""] call FNC_SetTeamColor;}";
 								description="AT Rifleman | Lotos 26";
 								isPlayable=1;
 							};
@@ -59986,7 +59990,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10310.099,18.336914,9650.8311};
+								position[]={10310.099,18.337135,9650.8311};
 								angles[]={0,3.1415927,0.0039095376};
 							};
 							side="East";
@@ -60001,7 +60005,7 @@ class Mission
 							};
 							id=3978;
 							type="rhs_msv_emr_machinegunner";
-							atlOffset=0.027778625;
+							atlOffset=0.027999878;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -60348,7 +60352,7 @@ class Mission
 							{
 								skill=0.55000001;
 								rank="SERGEANT";
-								init="call{[this, ""REB_MTRGNR"",""Dominos""] call FNC_GearScript; this setVariable [""FW_DontTrack"", true];}";
+								init="call{[this, ""REB_MTRGNR"",""Dominos""] call FNC_GearScript; this setVariable [""FW_DontTrack"", true]; [this, ""ACRE_PRC117F"",4] call FNC_SetRadio;}";
 								description="Mortar Gunner (82mm) | Dominos @Dominos | Mortar Section";
 								isPlayable=1;
 							};
@@ -60498,7 +60502,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10217.349,4.1395321,9954.8994};
+								position[]={10217.349,4.1400189,9954.8994};
 								angles[]={0,3.1764994,0};
 							};
 							side="East";
@@ -60507,13 +60511,13 @@ class Mission
 							{
 								skill=0.40000001;
 								rank="CORPORAL";
-								init="call{[this, ""REB_MTRASST"",""Dominos""] call FNC_GearScript; this setVariable [""FW_DontTrack"", true];}";
+								init="call{[this, ""REB_MTRASST"",""Dominos""] call FNC_GearScript; this setVariable [""FW_DontTrack"", true]; }";
 								description="Mortar Assistant | Dominos";
 								isPlayable=1;
 							};
 							id=4292;
 							type="rhs_vmf_flora_rifleman";
-							atlOffset=-0.076487064;
+							atlOffset=-0.076000214;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -60704,7 +60708,7 @@ class Mission
 							{
 								skill=0.40000001;
 								rank="SERGEANT";
-								init="call{[this, ""REB_SL"",""Radon""] call FNC_GearScript; [this, ""ACRE_PRC343"",4] call FNC_SetRadio;}";
+								init="call{[this, ""REB_SL"",""Radon""] call FNC_GearScript; [this, ""ACRE_PRC343"",4] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio;}";
 								description="Section Leader | Radon@Radon | Scout Section";
 								isPlayable=1;
 							};
@@ -60862,7 +60866,7 @@ class Mission
 							{
 								skill=0.40000001;
 								rank="SERGEANT";
-								init="call{[this, ""REB_FO"",""Radon""] call FNC_GearScript; [this, ""ACRE_PRC343"",4] call FNC_SetRadio;}";
+								init="call{[this, ""REB_FO"",""Radon""] call FNC_GearScript; [this, ""ACRE_PRC343"",4] call FNC_SetRadio; [this, ""ACRE_PRC148"",2] call FNC_SetRadio; [this, ""ACRE_PRC117F"",4] call FNC_SetRadio;}";
 								description="Forward Observer | Radon";
 								isPlayable=1;
 							};
@@ -64414,7 +64418,7 @@ class Mission
 			name="SEP Markers";
 			class Entities
 			{
-				items=9;
+				items=10;
 				class Item0
 				{
 					dataType="Layer";
@@ -67394,7 +67398,7 @@ class Mission
 							fillName="SolidFull";
 							a=10;
 							b=2;
-							angle=1.3660371e-005;
+							angle=1.3660354e-005;
 							id=5063;
 							atlOffset=109.52902;
 						};
@@ -67409,7 +67413,7 @@ class Mission
 							fillName="SolidFull";
 							a=10;
 							b=2;
-							angle=1.3660371e-005;
+							angle=1.3660354e-005;
 							id=5064;
 							atlOffset=108.15093;
 						};
@@ -69662,9 +69666,21 @@ class Mission
 					id=4202;
 					atlOffset=72.686386;
 				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={10502.216,31.089966,8696.7393};
+					name="rt_dru";
+					text="RT Druzhby";
+					type="mil_dot";
+					colorName="ColorBrown";
+					a=0;
+					id=5076;
+					atlOffset=-23.064186;
+				};
 			};
 			id=4201;
-			atlOffset=56.003586;
+			atlOffset=16.712952;
 		};
 		class Item12
 		{
@@ -78487,7 +78503,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11148.694,13.954358,5177.7637};
+				position[]={11148.694,13.954424,5177.7642};
 				angles[]={0,6.2657323,0};
 			};
 			side="Empty";
@@ -78501,7 +78517,7 @@ class Mission
 			};
 			id=5026;
 			type="itc_land_rhsafrf_2s3_tv";
-			atlOffset=0.0010004044;
+			atlOffset=0.0010681152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78675,6 +78691,78 @@ class Mission
 			id=5031;
 			type="Land_fort_artillery_nest";
 			atlOffset=-0.0095720291;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={10260.05,17.833,9645.5029};
+			name="sep_startpos";
+			type="Empty";
+			id=5075;
+			atlOffset=0.00019073486;
+		};
+		class Item57
+		{
+			dataType="Marker";
+			position[]={10511.125,44.541,8132.689};
+			name="objdima";
+			type="Empty";
+			id=5077;
+			atlOffset=0.00045394897;
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={10820.795,10.801,6916.8921};
+			name="kovrov";
+			type="Empty";
+			id=5078;
+			atlOffset=-0.00040340424;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={9272.9502,83.665001,9265.9102};
+			name="33mcb";
+			type="Empty";
+			id=5079;
+			atlOffset=0.00022125244;
+		};
+		class Item60
+		{
+			dataType="Marker";
+			position[]={11735.436,104.601,9048.9111};
+			name="1mcp";
+			type="Empty";
+			id=5080;
+			atlOffset=-0.0023574829;
+		};
+		class Item61
+		{
+			dataType="Marker";
+			position[]={11656.767,97.394997,8031.959};
+			name="Tob";
+			type="Empty";
+			id=5081;
+			atlOffset=0.00047302246;
+		};
+		class Item62
+		{
+			dataType="Marker";
+			position[]={10960.366,38.176998,9589.2109};
+			name="32mcb";
+			type="Empty";
+			id=5082;
+			atlOffset=-0.00043487549;
+		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={10096.651,22.643,9528.4082};
+			name="radon";
+			type="Empty";
+			id=5083;
+			atlOffset=0.00042152405;
 		};
 	};
 };

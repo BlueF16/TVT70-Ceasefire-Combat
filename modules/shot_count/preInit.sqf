@@ -66,6 +66,8 @@
 		aCount_82RED = 0;
 		aCount_9x18RED = 0;
 		aCount_73MMRED = 0;
+		aCount_AGSRED = 0;
+
 
 
 		aCount_addEH = {	//If units are spawned, this should be run on them: ["aCount_event_addEH", UNIT] call CBA_fnc_serverEvent;
@@ -118,7 +120,6 @@
 						
 						case "rhs_g_vog30": 						{ aCount_AGSBLU = aCount_AGSBLU + 1; };
 
-
 						case "rhs_g_vog25": 						{ aCount_40MMBLU = aCount_40MMBLU + 1; };
 						case "rhs_g_vg40md_white": 					{ aCount_40MMBLU = aCount_40MMBLU + 1; };
 						case "rhs_g_vg40md_green": 					{ aCount_40MMBLU = aCount_40MMBLU + 1; };
@@ -163,8 +164,6 @@
 						
 						case "itc_land_155mm": 						{ aCount_155BLU = aCount_155BLU + 1; };
 						case "itc_land_155mm_inert": 				{ aCount_155BLU = aCount_155BLU + 1; };
-					
-						
 						
 						
 					};
@@ -193,6 +192,8 @@
 
 						case "rhs_B_545x39_7N10_Ball": 				{ aCount_545RED = aCount_545RED + 1; };
 						case "rhs_B_545x39_Ball_Tracer_Green": 		{ aCount_545RED = aCount_545RED + 1; };
+						
+						case "rhs_g_vog30": 						{ aCount_AGSRED = aCount_AGSRED + 1; };
 
 						case "rhs_g_vog25": 						{ aCount_40MMRED = aCount_40MMRED + 1; };
 						case "rhs_g_vg40md_white": 					{ aCount_40MMRED = aCount_40MMRED + 1; };
@@ -226,8 +227,6 @@
 						case "rhs_ammo_3uof8":						{ aCount_30MMRED = aCount_30MMRED + 1; };
 						case "rhs_ammo_3ubr8":						{ aCount_30MMRED = aCount_30MMRED + 1; };
 						
-						case "rhs_ammo_9m113m":						{ aCount_ATGMRED = aCount_ATGMRED + 1; };
-						
 						case "rhs_ammo_9m119":						{ aCount_125RED = aCount_125RED + 1; };
 						case "rhs_ammo_3bm46":						{ aCount_125RED = aCount_125RED + 1; };
 						case "rhs_ammo_3bk31":						{ aCount_125RED = aCount_125RED + 1; };
@@ -248,6 +247,8 @@
 						
 						case "rhs_ammo_pg9v":						{ aCount_73MMRED = aCount_73MMRED + 1; };
 						case "rhs_ammo_og9v":						{ aCount_73MMRED = aCount_73MMRED + 1; };
+						
+						case "rhs_ammo_9m131": 						{ aCount_ATGMRED = aCount_ATGMRED + 1; };
 						
 						
 					};
@@ -276,7 +277,7 @@
 			if (aCount_MATBLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_MATBLU,"RPG-7"]]; };
 			//if (aCount_AT4BLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_AT4BLU,"M136 AT"]]; };
 			if (aCount_ATGMBLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_ATGMBLU,"9M113 Konkurs"]]; };
-			if (aCount_155BLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_155BLU,"155mm Rounds"]]; };
+			if (aCount_155BLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_155BLU,"2S3 152.4mm Rounds"]]; };
 		
 
 			_munitionsRED = [];
@@ -288,6 +289,7 @@
 			if (aCount_762RRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_762RRED,"7.62x54R"]]; };
 			if (aCount_8MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_8MMRED,"7.92mm Mauser"]]; };
 			if (aCount_45RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_45RED,".45 ACP"]]; };
+			if (aCount_AGSRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_AGSRED,"VOG 30"]]; };
 			if (aCount_40MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_40MMRED,"40mm Grenades"]]; };
 			if (aCount_M2RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_M2RED,"12.7x99"]]; };
 			if (aCount_KPVTRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_KPVTRED,"14.5x114"]]; };
@@ -298,9 +300,9 @@
 			if (aCount_MATRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_MATRED,"RPG-7"]]; };
 			if (aCount_30MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_30MMRED,"30x165"]]; };
 			if (aCount_125RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_125RED,"125mm 2A46 Rounds"]]; };
-			if (aCount_ATGMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_ATGMRED,"9M113 Konkurs"]]; };
+			if (aCount_ATGMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_ATGMRED,"9K115 Metis-M"]]; };
 			if (aCount_AT4RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_AT4RED,"M136 AT"]]; };
-			if (aCount_73MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_73MMRED,"73mm Rounds"]]; };
+			if (aCount_73MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_73MMRED,"SPG-9 73mm"]]; };
 			if (aCount_82RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_82RED,"82mm Rounds"]]; };
 		
 		

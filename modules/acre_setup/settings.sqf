@@ -51,10 +51,10 @@ FW_ChannelNames = [
         [6, "label", "CAS"]
     ],
     [//EAST
-        [1, "label", "PLTNET 1"],
-        [2, "label", "PLTNET 2"],
-        [3, "label", "PLTNET 3"],
-        [4, "label", "PLTNET 4"],
+        [1, "label", "1 MCB"],
+        [2, "label", "2 MCB"],
+        [3, "label", "3 MCB"],
+        [4, "label", "FIRES"],
         [5, "label", "COY"],
         [6, "label", "CAS"],
         [7, "label", "FIRES"]

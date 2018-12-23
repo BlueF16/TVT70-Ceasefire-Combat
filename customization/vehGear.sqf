@@ -38,6 +38,7 @@ switch (_type) do {
 	["rhs_45Rnd_545X39_7N10_AK",4] call FNC_AddItemVehicle;
 	["rhs_45Rnd_545X39_AK_Green",1] call FNC_AddItemVehicle;
 	["rhs_30Rnd_762x39mm_89",10] call FNC_AddItemVehicle;
+	["hlc_45Rnd_762x39_m_rpk",3] call FNC_AddItemVehicle;
 	["rhs_mag_rgd5",3] call FNC_AddItemVehicle;
 	["rhs_mag_rdg2_white",3] call FNC_AddItemVehicle;
 	["rhs_weap_rpg26",2] call FNC_AddItemVehicle;
@@ -47,7 +48,6 @@ switch (_type) do {
 	["ACE_quikclot",10] call FNC_AddItemVehicle;
 	["ACE_morphine",5] call FNC_AddItemVehicle;
 	["ACE_packingBandage",10] call FNC_AddItemVehicle;
-	["rhs_100Rnd_762x54mmR",2] call FNC_AddItemVehicle;
 	["rhs_30Rnd_545x39_AK_green",3] call FNC_AddItemVehicle;
 	["ACE_wirecutter",2] call FNC_AddItemVehicle;
 	["rhs_weap_rsp30_white",2] call FNC_AddItemVehicle;
