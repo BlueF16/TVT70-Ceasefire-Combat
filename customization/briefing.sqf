@@ -33,7 +33,7 @@ case west: { //If player is west he receives this briefing
 
 			NEWTAB("I. Situation:")
 			//Here you provide a detailed report of recent important events connected to your OPORD (so your Element, not the mission COs element only).
-			<br/>Earlier today 220 Company was attacked from the north by at least a Company of Mechanized Sepratists with indirect support. 221 Platoon were able to destroy the enemy platoon that attacked the trench directly the rest of the sepratists fled.
+			<br/>Earlier today 220 Company was attacked from the north by at least a Company of Mechanized Separatists with indirect support. 221 Platoon were able to destroy the enemy platoon that attacked the trench directly the rest of the Separatists fled.
 			Unfortunately our Company commander was hit as well as <marker name='221'>221</marker>(You) took several cassuailites and two of our BMPs have been rendered inoperable of action. The Company Commander is being evacuated to the south to Kovrov but has attached his FO to 221 platoon.
 			<br/>
 			<br/>As of 15 minutes ago our two sister platoons have been dealing with harrsing fires emerging to their north, the Company has been ordered to be prepared for another assault and each PLT to be prepared to conduct a Counter-Assault if ordered.
@@ -85,7 +85,7 @@ case west: { //If player is west he receives this briefing
 			//What exactly do you currently know about the enemy in the AO. All known Intel is material for Disposition and is only found here.
 			//If you reference new Intel on another point in the OPORD that is not already mentioned in Disposition or Composition, you made a mistake.
 			//Explain all Intel in greatest detail. This is of crucial importance.
-			<br/>Our forward scouts have reported a platoon of Sepratists assembling to our North. They have been assembled for the past 2 hours, we assume they are waiting for their sister platoon who has been bogged down by the wet conditions up North.
+			<br/>Our forward scouts have reported a platoon of Separatists assembling to our North. They have been assembled for the past 2 hours, we assume they are waiting for their sister platoon who has been bogged down by the wet conditions up North.
 			<br/>
 			<br/><font size='14'>b. COMPOSITION:</font>
 			//What organic assets for support and reinforcement are available to the enemy? This scales down to the level of mentioning single weapon systems individual soldiers will fight.
@@ -101,7 +101,7 @@ case west: { //If player is west he receives this briefing
 			<br/>The enemy is Mechanized and is expected to utilise his vehicles. The enemy will use his speed to quickly attack the flanks of the trench and try to bypass our enagement areas from where he will mount an assault.
 			<br/>
 			<br/><font size='14'>b. FIRE SUPPORT:</font>
-			<br/>We expect the Sepratists to utilise mortars inconjucton with their attacks.
+			<br/>We expect the Separatists to utilise mortars inconjucton with their attacks.
 			<br/>
 			<br/><font size='14'>c. INTELLIGENCE:</font>
 			<br/>The enemy has superior knowledge about the terrain and the positions of our trenches in the AO.
@@ -200,7 +200,7 @@ case west: { //If player is west he receives this briefing
 			<br/> LR 5 - Molotok 551
 			<br/>
 			<br/><font color='#FFA500' size='15'>2. Challenge and Password:</font>
-			<br/>C: Ukranian P: Shield
+			<br/>C: Ukrainian P: Shield
 			<br/>
 			<br/><font color='#FFA500' size='15'>3. Number Combination:</font>
 			<br/>12
@@ -218,7 +218,7 @@ case west: { //If player is west he receives this briefing
 			ENDTAB;
 
 	    }; //End of west case
-		
+
 		case east: {
 NEWTAB("ORIENTATION POINTS")
 	<br/>Assuming South is front.
@@ -227,10 +227,10 @@ NEWTAB("ORIENTATION POINTS")
 	<br/>Front-Left - 550 - Farm Compound - <marker name='OP-100'>OP-100</marker>
 	<br/>Front - 750 - Electrical Plant - <marker name='OP-101'>OP-101</marker>
 	<br/>Half-Left - 1300 - Elevation 123 - <marker name='OP-102'>OP-102</marker>
-	
+
 ENDTAB;
 NEWTAB("CURRENT SITUATION")
-	<br/>At 14:00 hours 2 MCP was tasked with advancing South along RT Druzhby and seizing the crossroads at <marker name='objdima'>OBJ DIMA</marker>. 
+	<br/>At 14:00 hours 2 MCP was tasked with advancing South along RT Druzhby and seizing the crossroads at <marker name='objdima'>OBJ DIMA</marker>.
 	<br/>
 	<br/>However, a combination of heavy fire support, emplaced mines, and extensive fortifications prevented 2 MCP from achieving their objective, resulting in the loss of 1/2 MCB despite the destruction of at least one enemy BMP and several casualties.
 	<br/>
@@ -248,15 +248,15 @@ ENDTAB;
 NEWTAB("HIGHER AND ADJACENT UNITS")
 	<br/>Higher elements have ordered general attacks along the front to put additional pressure on Ukrainian forces, and to attempt to force a breakthrough that can be exploited by Russian troops.
 	<br/>
-	<br/>3 MCP has been tasked with attempting to clear through the forested hills to the west, with <marker name='33mcb'>3/3 MCB</marker> to the immediate west.  
+	<br/>3 MCP has been tasked with attempting to clear through the forested hills to the west, with <marker name='33mcb'>3/3 MCB</marker> to the immediate west.
 	<br/>
-	<br/><marker name='1mcp'>1 MCP</marker> has been tasked with attempting to secure fortified military instillations in the hills further east. 
+	<br/><marker name='1mcp'>1 MCP</marker> has been tasked with attempting to secure fortified military instillations in the hills further east.
 	<br/>
 	<br/>A reconnaissance section, callsign <marker name='radon'>Radon</marker>, has been tasked to support 2 MCP in their assault.
 ENDTAB;
 
 NEWTAB("MISSION")
-	<br/>The remainder of 2 MCP is to advance down RT Druzhby and secure the crossroads and Ukrainian fortifications at <marker name='objdima'>OBJ DIMA</marker> NLT 18:00. 
+	<br/>The remainder of 2 MCP is to advance down RT Druzhby and secure the crossroads and Ukrainian fortifications at <marker name='objdima'>OBJ DIMA</marker> NLT 18:00.
 ENDTAB;
 
 NEWTAB("ORDER")
@@ -264,17 +264,17 @@ NEWTAB("ORDER")
 	<br/>
 	<br/><font color='#FFA500' size='15'>Tasks to subordinate units</font>
 	<br/>
-	<br/>It is Voshod Battalion's orders to attempt to force a breakthrough near the Kovrov area to drive back Ukrainian forces and create a breakthrough to be exploited by our allies. 
+	<br/>It is Voshod Battalion's orders to attempt to force a breakthrough near the Kovrov area to drive back Ukrainian forces and create a breakthrough to be exploited by our allies.
 	<br/>
 	<br/><marker name='1mcp'>1 MCP</marker> is to attempt to clear through the several Ukrainian held outposts near <marker name='tob'>'Tobolsk'</marker>.
 	<br/>
-	<br/>2 MCP is to reattempt to seize the crossroads at <marker name='objdima'>OBJ DIMA</marker> along the route to Kovrov. <marker name='sep_startpos'>2/2 МСB</marker> will comprise the main effort, with understrength <marker name='32mcb'>3/2 MCB</marker> in reserve. 
+	<br/>2 MCP is to reattempt to seize the crossroads at <marker name='objdima'>OBJ DIMA</marker> along the route to Kovrov. <marker name='sep_startpos'>2/2 МСB</marker> will comprise the main effort, with understrength <marker name='32mcb'>3/2 MCB</marker> in reserve.
 	<br/>
 	<br/>3 MCP is to attempt to force through the forested terrain and hills to the west.
 	<br/>
 	<br/><font color='#FFA500' size='15'>Tasks to artillery and other units</font>
 	<br/>
-	<br/>2 MCP 82mm Mortar, callsign <marker name='marker_1055'>Dominos</marker>, has been tasked to support the assault of 2/2 and 2/3 MCB. 
+	<br/>2 MCP 82mm Mortar, callsign <marker name='marker_1055'>Dominos</marker>, has been tasked to support the assault of 2/2 and 2/3 MCB.
 	<br/>
 	<br/>Round Count:
 	<br/>25 x HE
@@ -290,7 +290,7 @@ NEWTAB("ORDER")
 	<br/>Report of readiness by platoon leaders by 10/28, 16:00h
 	<br/>Attack readiness: 10/28, 16:55h
 	<br/>
-	<br/>Note: There is a 3 minute setup timer for the Radon reconnaissance section, and a 6 minute setup timer for 2/2 MCB. 
+	<br/>Note: There is a 3 minute setup timer for the Radon reconnaissance section, and a 6 minute setup timer for 2/2 MCB.
 	<br/>
 	<br/><font color='#FFA500' size='15'>Signals</font>
 	<br/>
@@ -306,7 +306,7 @@ NEWTAB("ORDER")
 	<br/>3 MCB 2 SEC, 'Lotos 28', SR-8
 	<br/>
 	<br/>2 MCB NET: LR-2
-	<br/>3 MCB NET: LR-2 
+	<br/>3 MCB NET: LR-2
 	<br/>-> 3 MCB reinforcements should collaborate with survivors from 2 MCB.
 	<br/>FIRES NET: LR-4
 	<br/>
@@ -319,7 +319,7 @@ NEWTAB("ORDER")
 	<br/>2 MCP succession:
 	<br/>2/2 MCB
 	<br/>2/3 MCB
-	<br/> 
+	<br/>
 	<br/><font color='#FFA500' size='15'>Weather</font>
 	<br/>
 	<br/>Evening, overcast.
@@ -336,20 +336,22 @@ NEWTAB("AI DRIVERS")
 	<br/>To activate the AI driver, simply hop into the commander or gunner's seat of the vehicle, and then ace interact to add or remove the driver. The driver's view can also be toggled via ace interact once spawned in. They are enabled for all armored vehicles in this scenario.
 ENDTAB;
 
-NEWTAB("APPENDIX I: VEHICLE KIT") 
+NEWTAB("APPENDIX I: VEHICLE KIT")
 	<br/>All BTR-80's contain:
 	<br/>13 x 5.45 30rd Magazines
 	<br/>5 x 5.45 45rd Magazines
 	<br/>10 x 7.62 Magazines
 	<br/>3 x 7.62 45rd Magazines
 	<br/>2 x RPG-26
-	<br/>2 x PG-7VL 
+	<br/>2 x PG-7VL
 	<br/>3 x RDG-5 Hand Grenade
 	<br/>3 x RGD-2 Smoke Grenade
 	<br/>2 x Wirecutters
 	<br/>2 x ROP-30 White
 	<br/>1 x ROP-30 Red
 	<br/>1 x ROP-30 Green
+	<br/>5 x Chemlight Red
+	<br/>5 x Chemlight Green
 	<br/>Additional Medical Supplies
 ENDTAB;
 
@@ -358,7 +360,7 @@ NEWTAB("APPENDIX II: RESPAWN NOTES")
 	<br/>
 	<br/>There are 20 respawn tickets available for the team which will respawn at <marker name='32mcb'>3/2 MCB</marker> to simulate additional reinforcements.
 	<br/>
-	<br/><marker name='32mcb'>3/2 MCB</marker> is mounted in two transport trucks and one SPG-9 technical with 13 rounds of ammunition. 
+	<br/><marker name='32mcb'>3/2 MCB</marker> is mounted in two transport trucks and one SPG-9 technical with 13 rounds of ammunition.
 	<br/>
 	<br/>People who respawn will start in a pen, whereupon you should go to the billboard near the barn and READ THE BILLBOARD before selecting your desired role at the info stand, with leadership roles highlighted in red.
 	<br/>
@@ -373,11 +375,11 @@ ENDTAB;
 			NEWTAB("MISSION NOTES") //This is shown for everyone
 			<br/><font color='#FFA500' size='15'>END CONDITIONS</font>
 			<br/>
-			<br/><font size='14'>Sepratist Forces(OPFOR) VICTORY:</font>
+			<br/><font size='14'>Separatist Forces(OPFOR) VICTORY:</font>
 			<br/>- 70 Percent BLUFOR casualties and Trenches Siezed.
 			<br/>- 85 Percent BLUFOR casualties.
 			<br/>
-			<br/><font size='14'>Ukranian Armed Forces(BLUFOR) VICTORY:</font>
+			<br/><font size='14'>Ukrainian Armed Forces(BLUFOR) VICTORY:</font>
 			<br/>- 85 Percent OPFOR casualties
 			<br/>
 			<br/><font size='14'>Time Limit:</font>
@@ -393,7 +395,7 @@ ENDTAB;
 			<br/>
 			<br/><font color='#FFA500' size='15'>MAPS</font>
 			<br/>
-			<br/>If you do not have a map, you can ace interact with someone who does in order to view their map. 
+			<br/>If you do not have a map, you can ace interact with someone who does in order to view their map.
 			<br/>
 			<br/><font color='#FFA500' size='15'>CREDITS</font>
 			<br/>

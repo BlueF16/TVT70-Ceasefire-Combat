@@ -65,37 +65,39 @@ if (_currentCount >= _maxCount) then {
 
  format ["Squad 1 Members:\n\nSquad Leader: %1,\nEfreitor: %2,\n Autorifleman: %3,\n RPG: %4,\n RPG Asst.: %5,\n Rifleman 1: %6,\n Rifleman 2: %7,\n Rifleman 3: %8",NAME1 #2, NAME1 #3,
   NAME1 #4, NAME1 #5, NAME1 #6, NAME1 #7, NAME2 #7, NAME2 #10] remoteExec ["hint",BLU_Callers1 select [2,7]];
- format ["Squad 2 Members:\nSL: %1,\nEfreitor: %2,\n Autorifleman: %3,\n RPG: %4,\n RPG Asst.: %5,\n Rifleman 1: %6,\n Rifleman 2: %7,\n Rifleman 3: %8", NAME2 #2, NAME2 #3,
-  NAME2 #4, NAME2 #5, NAME2 #6, NAME2 #11, NAME2 #12, NAME2 #13] remoteExec ["hint",BLU_Callers2 select [2,6]];
+ //format ["Squad 2 Members:\nSL: %1,\nEfreitor: %2,\n Autorifleman: %3,\n RPG: %4,\n RPG Asst.: %5,\n Rifleman 1: %6,\n Rifleman 2: %7,\n Rifleman 3: %8", NAME2 #2, NAME2 #3,
+  //NAME2 #4, NAME2 #5, NAME2 #6, NAME2 #11, NAME2 #12, NAME2 #13] remoteExec ["hint",BLU_Callers2 select [2,6]];
 
 if (MAXCOUNT isEqualTo BLU_ChosenGearsCounters) then {
-   HQ= BLU_Callers1 select [0,1];
+   //HQ= BLU_Callers1 select [0,1];
 	 S1= BLU_Callers1 select [2,7];
-   S1= S1 pushBack (BLU_Callers2 # 7);
-   S1= S1 pushBack (BLU_Callers2 # 10);
-   S2= BLU_Callers2 select [2,6];
-   S2= S2 pushBack (BLU_Caller2 # [11,13]);
-   SPG= BLU_Callers1 select [8,9];
+   //S1= S1 pushBack (BLU_Callers2 # 7);
+   //S1= S1 pushBack (BLU_Callers2 # 10);
+   //S2= BLU_Callers2 select [2,6];
+  // S2= S2 pushBack (BLU_Caller2 # [11,13]);
+  // SPG= BLU_Callers1 select [8,9];
 	 groupA = createGroup [east, true];
 	 groupB = createGroup [east, true];
 	 groupC = createGroup [east, false];
 	 groupD = createGroup [east,false];
-   HQ joinSilent groupA;
+  // HQ joinSilent groupA;
 	 S1 joinSilent groupB;
-   S2 joinSilent groupC;
-   SPG joinSilent groupD;
-	 GROUPS=[HQ,S1,S2,SPG];
+   //S2 joinSilent groupC;
+   //SPG joinSilent groupD;
+	 GROUPS=[S1];
 	  {
-	     format ["You have been grouped to your respective squad, you will be released from the pen in 60 seconds"] remoteExec ["hint",_x]
+	     format ["You have been grouped to your respective squads, the vehicles are unlocked, and you will be released from the pen in 30 seconds"] remoteExec ["hint",_x]
 	 } forEach GROUPS;
-	 sleep 60;
-	 [] spawn {
-		 {_x hideObjectGlobal true;
-								 } forEach FW_RespawnPenGateEast;
-	 {_x setVehicleLock "UNLOCKED"} forEach RespawnVehicles;
-		 sleep 6000;
-		 FW_RespawnPenGateEast hideObjectGlobal false;
-	 };
+	 remoteExec ["RemovePen",2];
+	// {_x setVehicleLock "UNLOCKED"} forEach RespawnVehicles;
+	// sleep 30;
+	// [] spawn {
+	//	 {_x hideObjectGlobal true;
+	//							 } forEach FW_RespawnPenGateEast;
+	//	 sleep 6000;
+	//	 FW_RespawnPenGateEast hideObjectGlobal false;
+	// };
+	
 
 
 };

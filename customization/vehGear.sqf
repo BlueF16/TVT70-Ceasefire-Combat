@@ -21,7 +21,7 @@ switch (_type) do {
 		["ACE_1Rnd_82mm_Mo_Smoke", 10] call FNC_AddItemVehicle;
 
 	};
-	
+
 	case "ILLUM": {
 
 		_vehicle call FNC_RemoveAllVehicleGear;
@@ -53,6 +53,8 @@ switch (_type) do {
 	["rhs_weap_rsp30_white",2] call FNC_AddItemVehicle;
 	["rhs_weap_rsp30_red",1] call FNC_AddItemVehicle;
 	["rhs_weap_rsp30_green",1] call FNC_AddItemVehicle;
+	["Chemlight_green",5] call FNC_AddItemVehicle;
+	["Chemlight_red",5] call FNC_AddItemVehicle;
 
 };
 	case "BRDM": {
@@ -88,6 +90,8 @@ case "UKRBOX": {
 	["rhs_weap_rsp30_white",2] call FNC_AddItemVehicle;
 	["rhs_weap_rsp30_red",1] call FNC_AddItemVehicle;
 	["rhs_weap_rsp30_green",1] call FNC_AddItemVehicle;
+	["Chemlight_green",10] call FNC_AddItemVehicle;
+	["Chemlight_red",10] call FNC_AddItemVehicle;
 };
 
 case "UKRBMP": {

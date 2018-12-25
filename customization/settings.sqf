@@ -6,13 +6,13 @@ K=1;/*Autorifleman(5) count*/
 L=1;/*RPG count(6)*/
 U=1;/*RPG ASST count(7)*/
 Y=1;/*rifleman count(8)*/
-BLU_GearNames = [["<t color='#FF0000'>Platoon Leader", "REB_PL", "3rd HQ", 1],["Medic","REB_MED","3rd HQ",1],["<t color='#FF0000'>Squad Leader", "REB_SL",(format ["%1 Squad", O]), 2],["Efreitor", "REB_EFR", (format ["%1 Squad", O]), 2],["Autorifleman", "REB_RPK", (format ["%1 Squad", O]), 2],["RPG Grenadier", "REB_RPG", (format ["%1 Squad", O]), 2],
-["RPG Assistant", "REB_RPGASST", (format ["%1 Squad", O]), 2],["Rifleman", "REB_RF", (format ["%1 Squad", O]), 6],["<t color='#FF0000'>SPG Commander","REB_SPGC","SPG Crew",1],["SPG Driver","REB_RF","SPG Crew",1]];
+BLU_GearNames = [["<t color='#FF0000'>Platoon Leader", "REB_PL", "3rd HQ", 0],["Medic","REB_MED","3rd HQ",0],["<t color='#FF0000'>Squad Leader", "REB_SL",(format ["%1 Squad", O]), 1],["<t color='#FF0000'>Efreitor", "REB_EFR", (format ["%1 Squad", O]), 0],["Autorifleman", "REB_RPK", (format ["%1 Squad", O]), 0],["RPG Grenadier", "REB_RPG", (format ["%1 Squad", O]), 0],
+["RPG Assistant", "REB_RPGASST", (format ["%1 Squad", O]), 0],["Rifleman", "REB_RF", (format ["%1 Squad", O]), 0],["<t color='#FF0000'>SPG Commander","REB_SPGC","SPG Crew",0],["SPG Driver","REB_RF","SPG Crew",0]];
 {
   box addAction [_x # 0, "gearChooser.sqf", [_forEachIndex]];
 } forEach BLU_GearNames;
 
-
+RemovePen = compile loadFile "pen.sqf";
 
 if (isServer) then {
 
@@ -21,8 +21,8 @@ if (isServer) then {
 	FW_TimeLimit = 70; //Time limit in minutes, to disable the time limit set it to 0
 	FW_TimeLimitMessage = "Separatist Forces have not completed their objective they lack zeal!<br/>Putin sends more money."; //The message displayed when the time runs out
 
-	[west, "Ukranian Armed Forces", "player"] call FNC_AddTeam; //Adds a player team called USMC on side west
-	[east, "Ukranian Separatists", "player"] call FNC_AddTeam; //Adds a ai team called VDV on side east
+	[west, "Ukrainian Armed Forces", "player"] call FNC_AddTeam; //Adds a player team called USMC on side west
+	[east, "Ukrainian Separatists", "player"] call FNC_AddTeam; //Adds a ai team called VDV on side east
 
 	// [resistance, "Local Militia", "player"] call FNC_AddTeam; //Adds a player team called Local Militia on side resistance (aka independent)
 
@@ -45,6 +45,8 @@ if (isServer) then {
 	//Players should be put in enclosed space, when their number reaches treshold, the defined "gate" will disappear for 30 seconds
 	FW_RespawnPenGateEast = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p20,p21,p22,p23];
   RespawnVehicles = [v7,v8,v9];
+	publicVariable "FW_RespawnPenGateEast";
+	publicVariable "RespawnVehicles";
 	//FW_RespawnPenGateEast = YourEditorObjectName;
 	//FW_RespawnPenGateInd = YourEditorObjectName;
 	//FW_RespawnPenGateCiv = YourEditorObjectName;

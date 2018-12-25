@@ -2,7 +2,7 @@
 // Whitelisted sides (BLUFOR,OPFOR,RESISTANCE,CIVILIAN)
 	eg_whitelisted_sides = [BLUFOR,OPFOR,RESISTANCE,CIVILIAN];
 // Whether AI can be viewed by the spectator (true/false)
-	eg_ai_viewed_by_spectator = true;
+	eg_ai_viewed_by_spectator = false;
 // Whether Free camera mode is available (true/false)
 	eg_free_camera_mode_available = true;
 // Whether 3th Person Perspective camera mode is available (true/false)

@@ -1,5 +1,5 @@
-private _westCasualty = "Ukranian Armed Forces" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "USMC"
-private _eastCasualty = "Ukranian Separatists" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "VDV"
+private _westCasualty = "Ukrainian Armed Forces" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "USMC"
+private _eastCasualty = "Ukrainian Separatists" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "VDV"
 private _msg = "";
 
 
@@ -13,7 +13,7 @@ if ((_westCasualty >= 70) and ("EAST" == "cap_zone" call FNC_isCaptured)) then {
 	if (_eastCasualty >= 20) then {_msg="MAJOR"};
 	if (_eastCasualty < 20) then {_msg="TOTAL"};
 
-	(format ["Sepratist Forces %1 VICTORY<br/>The Ukranian Armed Forces have been routed<br/>and their trench system has been siezed.", _msg]) call FNC_EndMission;
+	(format ["Separatist Forces %1 VICTORY<br/>The Ukrainian Armed Forces have been routed<br/>and their trench system has been siezed.", _msg]) call FNC_EndMission;
 	};
 
 if (_eastCasualty >= 85) then {
@@ -22,7 +22,7 @@ if (_eastCasualty >= 85) then {
 	if (_westCasualty >= 45) then {_msg="MINOR"};
 	if (_westCasualty >= 20) then {_msg="MAJOR"};
 	if (_westCasualty < 20) then {_msg="TOTAL"};
-	(format ["Ukranian Armed Forces %1 VICTORY<br/>The Sepratist Forces have sustained heavy casualties and have fled.", _msg]) call FNC_EndMission;
+	(format ["Ukrainian Armed Forces %1 VICTORY<br/>The Separatist Forces have sustained heavy casualties and have fled.", _msg]) call FNC_EndMission;
 	};
 
 
@@ -32,7 +32,7 @@ if (_eastCasualty >= 85) then {
 		if (_eastCasualty >= 45) then {_msg="MINOR"};
 		if (_eastCasualty >= 20) then {_msg="MAJOR"};
 		if (_eastCasualty < 20) then {_msg="TOTAL"};
-		(format ["Sepratist Forces %1 VICTORY<br/>The Ukranian Armed Forces have been routed.", _msg]) call FNC_EndMission;
+		(format ["Separatist Forces %1 VICTORY<br/>The Ukrainian Armed Forces have been routed.", _msg]) call FNC_EndMission;
 		};
 
 

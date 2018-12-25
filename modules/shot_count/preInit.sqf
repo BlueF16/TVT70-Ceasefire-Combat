@@ -41,7 +41,7 @@
 		aCount_30MMBLU = 0;
 		aCount_AGSBLU = 0;
 		aCount_ATGMBLU = 0;
-		
+
 
 		aCount_556RED = 0;
 		aCount_762RED = 0;
@@ -99,25 +99,25 @@
 					switch (_this select 1) do {
 						case "rhs_ammo_556x45_Mk318_Ball": 			{ aCount_556BLU = aCount_556BLU + 1; };
 						case "rhs_ammo_556x45_M855_Ball": 			{ aCount_556BLU = aCount_556BLU + 1; };
-		
+
 
 						case "UK3CB_BAF_762_Ball": 					{ aCount_762BLU = aCount_762BLU + 1; };
 						case "HLC_762x51_ball": 					{ aCount_762BLU = aCount_762BLU + 1; };
 						//case "B_762x51_Tracer_Red": 				{ aCount_762BLU = aCount_762BLU + 1; };
 						case "HLC_762x51_MK316_20in": 				{ aCount_762BLU = aCount_762BLU + 1; };
 						case "rhs_ammo_762x51_M118_Special_Ball": 	{ aCount_762BLU = aCount_762BLU + 1; };
-						
+
 						case "rhs_ammo_792x57_Ball": 				{ aCount_8MMBLU = aCount_8MMBLU + 1; };
 
 						case "rhs_B_762x54_Ball": 					{ aCount_762RBLU = aCount_762RBLU + 1; };
-						
+
 						case "rhs_B_762x39_Ball_89": 				{ aCount_762AKBLU = aCount_762AKBLU + 1; };
 
 						case "rhs_ammo_45ACP_MHP": 					{ aCount_45BLU = aCount_45BLU + 1; };
 
 						case "rhs_B_545x39_7N10_Ball": 				{ aCount_545BLU = aCount_545BLU + 1; };
 						case "rhs_B_545x39_Ball_Tracer_Green": 		{ aCount_545BLU = aCount_545BLU + 1; };
-						
+
 						case "rhs_g_vog30": 						{ aCount_AGSBLU = aCount_AGSBLU + 1; };
 
 						case "rhs_g_vog25": 						{ aCount_40MMBLU = aCount_40MMBLU + 1; };
@@ -135,7 +135,7 @@
 
 						case "RHS_ammo_M792_HEI": 					{ aCount_25MMBLU = aCount_25MMBLU + 1; };
 						case "RHS_ammo_M919_APFSDS": 				{ aCount_25MMBLU = aCount_25MMBLU + 1; };
-						
+
 						case "rhs_ammo_3uof8":						{ aCount_30MMBLU = aCount_30MMBLU + 1; };
 						case "rhs_ammo_3ubr8":						{ aCount_30MMBLU = aCount_30MMBLU + 1; };
 
@@ -150,22 +150,22 @@
 						case "rhs_rpg7v2_pg7vl": 					{ aCount_MATBLU = aCount_MATBLU + 1; };
 						case "rhs_rpg7v2_og7v": 					{ aCount_MATBLU = aCount_MATBLU + 1; };
 						case "rhs_rpg7v2_pg7vr":					{ aCount_MATBLU = aCount_MATBLU + 1; };
-						
+
 						case "rhs_B_9x19_7N21":						{ aCount_919BLU = aCount_919BLU + 1; };
 						case "rhs_ammo_9x19_JHP":					{ aCount_919BLU = aCount_919BLU + 1; };
-						
+
 						case "rhs_ammo_M136_rocket":				{ aCount_AT4BLU = aCount_AT4BLU + 1; };
-						
+
 						case "rhs_ammo_127x99_Ball_Tracer_Red":		{ aCount_M2BLU = aCount_M2BLU + 1; };
-						
+
 						case "ace_missile_dragon": 					{ aCount_M47BLU = aCount_M47BLU + 1; };
-						
+
 						case "rhs_ammo_9m113m": 					{ aCount_ATGMBLU = aCount_ATGMBLU + 1; };
-						
+
 						case "itc_land_155mm": 						{ aCount_155BLU = aCount_155BLU + 1; };
 						case "itc_land_155mm_inert": 				{ aCount_155BLU = aCount_155BLU + 1; };
-						
-						
+
+
 					};
 				};
 
@@ -179,12 +179,12 @@
 						case "B_762x51_Tracer_Red": 				{ aCount_762RED = aCount_762RED + 1; };
 						case "HLC_762x51_MK316_20in": 				{ aCount_762RED = aCount_762RED + 1; };
 						case "rhs_ammo_762x51_M118_Special_Ball": 	{ aCount_762RED = aCount_762RED + 1; };
-						
+
 						case "rhs_ammo_792x57_Ball": 				{ aCount_8MMRED = aCount_8MMRED + 1; };
 
 						case "rhs_B_762x54_Ball": 					{ aCount_762RRED = aCount_762RRED + 1; };
 						case "rhs_B_762x54_7N1_Ball": 				{ aCount_762RRED = aCount_762RRED + 1; };
-						
+
 						case "rhs_B_762x39_Ball_89": 				{ aCount_762AKRED = aCount_762AKRED + 1; };
 						case "rhs_B_762x39_Tracer": 				{ aCount_762AKRED = aCount_762AKRED + 1; };
 
@@ -192,7 +192,7 @@
 
 						case "rhs_B_545x39_7N10_Ball": 				{ aCount_545RED = aCount_545RED + 1; };
 						case "rhs_B_545x39_Ball_Tracer_Green": 		{ aCount_545RED = aCount_545RED + 1; };
-						
+
 						case "rhs_g_vog30": 						{ aCount_AGSRED = aCount_AGSRED + 1; };
 
 						case "rhs_g_vog25": 						{ aCount_40MMRED = aCount_40MMRED + 1; };
@@ -202,7 +202,7 @@
 						case "rhsusf_40mm_HE": 						{ aCount_40MMRED = aCount_40MMRED + 1; };
 						case "rhsusf_40mm_HEDP": 					{ aCount_40MMRED = aCount_40MMRED + 1; };
 						case "rhs_40mm_smoke_white": 				{ aCount_40MMRED = aCount_40MMRED + 1; };
-						
+
 
 						case "rhs_ammo_145x115mm": 					{ aCount_KPVTRED = aCount_KPVTRED + 1; };
 
@@ -223,34 +223,34 @@
 						case "rhs_rpg7v2_pg7vl": 					{ aCount_MATRED = aCount_MATRED + 1; };
 						case "rhs_rpg7v2_og7v": 					{ aCount_MATRED = aCount_MATRED + 1; };
 						case "rhs_rpg7v2_pg7vr":					{ aCount_MATRED = aCount_MATRED + 1; };
-						
+
 						case "rhs_ammo_3uof8":						{ aCount_30MMRED = aCount_30MMRED + 1; };
 						case "rhs_ammo_3ubr8":						{ aCount_30MMRED = aCount_30MMRED + 1; };
-						
+
 						case "rhs_ammo_9m119":						{ aCount_125RED = aCount_125RED + 1; };
 						case "rhs_ammo_3bm46":						{ aCount_125RED = aCount_125RED + 1; };
 						case "rhs_ammo_3bk31":						{ aCount_125RED = aCount_125RED + 1; };
 						case "rhs_ammo_3of26":						{ aCount_125RED = aCount_125RED + 1; };
-						
+
 						case "rhs_B_9x19_7N21":						{ aCount_919RED = aCount_919RED + 1; };
 						case "rhs_ammo_9x19_JHP":					{ aCount_919RED = aCount_919RED + 1; };
-						
+
 						case "rhs_ammo_M136_rocket":				{ aCount_AT4RED = aCount_AT4RED + 1; };
-						
+
 						case "rhs_ammo_127x99_Ball_Tracer_Red":		{ aCount_M2RED = aCount_M2RED + 1; };
-						
+
 						case "Sh_82mm_AMOS":						{ aCount_82RED = aCount_82RED + 1; };
 						case "Smoke_82mm_AMOS_White":				{ aCount_82RED = aCount_82RED + 1; };
 						case "itc_82mm_flare":						{ aCount_82RED = aCount_82RED + 1; };
-						
+
 						case "rhs_B_9x18_57N181S":					{ aCount_9x18RED = aCount_9x18RED + 1; };
-						
+
 						case "rhs_ammo_pg9v":						{ aCount_73MMRED = aCount_73MMRED + 1; };
 						case "rhs_ammo_og9v":						{ aCount_73MMRED = aCount_73MMRED + 1; };
-						
+
 						case "rhs_ammo_9m131": 						{ aCount_ATGMRED = aCount_ATGMRED + 1; };
-						
-						
+
+
 					};
 				};
 			};
@@ -278,7 +278,7 @@
 			//if (aCount_AT4BLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_AT4BLU,"M136 AT"]]; };
 			if (aCount_ATGMBLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_ATGMBLU,"9M113 Konkurs"]]; };
 			if (aCount_155BLU > 0) then { _munitionsBLU set [count _munitionsBLU,[aCount_155BLU,"2S3 152.4mm Rounds"]]; };
-		
+
 
 			_munitionsRED = [];
 			if (aCount_919RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_919RED,"9x19"]]; };
@@ -304,8 +304,8 @@
 			if (aCount_AT4RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_AT4RED,"M136 AT"]]; };
 			if (aCount_73MMRED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_73MMRED,"SPG-9 73mm"]]; };
 			if (aCount_82RED > 0) then { _munitionsRED set [count _munitionsRED,[aCount_82RED,"82mm Rounds"]]; };
-		
-		
+
+
 
 			["aCount_event_scoreScreen", [_munitionsBLU,_munitionsRED]] call CBA_fnc_globalEvent;
 		};
@@ -318,7 +318,7 @@
 				_arrayRED = param [1];
 
 				aCount_textBLU = "UKR Munitions Expended:<br/>";
-				aCount_textRED = "Sepratists Munitions Expended:<br/>";
+				aCount_textRED = "Separatists Munitions Expended:<br/>";
 
 				{
 					_count = _x select 0;
@@ -337,4 +337,3 @@
 
 		["aCount_event_scoreScreen",aCount_shotDisplay] call CBA_fnc_addEventHandler;
 	};
-	
