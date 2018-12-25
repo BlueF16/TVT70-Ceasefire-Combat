@@ -153,11 +153,26 @@ case west: { //If player is west he receives this briefing
 			<br/> - <marker name='BMP Rampart B'>BMP Rampart B</marker> has been fully constructed.
 			<br/>b. Class II: Ammunition
 			<br/> Resupply via BMP or Crates in Indirect Bunkers.
+			<br/> Crates:
+			<br/>20x 30rnd 5.45
+		  <br/>10x 45rnd 5.45
+		  <br/>3x 45rnd 5.45 Green
+		  <br/>4x RGD5
+		  <br/>6x RGD2 White Smoke
+		  <br/>2x RPG26
+		  <br/>2x PG7VL
+		  <br/>4x 100rnd 7.62 PKM Boxes
+			<br/>2x RSP30 White Flares
+			<br/>1x RSP30 Red Flare
+			<br/>1x RSP30 Green Flare
+			<br/>10x Green Chemlights
+			<br/>10x Red Chemlights
+			<br/>
 			<br/> Molotok 551 (2S3 152.4mm):
-			<br/> 14 HE
-			<br/> 3 ICM
-			<br/> 8 Smoke
-			<br/> 40 ILLUM
+			<br/> 14x HE
+			<br/> 3x ICM
+			<br/> 8x Smoke
+			<br/> 40x ILLUM
 			<br/>d. Class III: Medical equipment
 			<br/> Crates in Indirect Bunkers.
 			<br/><font color='#FFA500' size='15'>2. Transportation:</font>

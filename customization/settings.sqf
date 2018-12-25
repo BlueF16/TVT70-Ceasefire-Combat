@@ -6,8 +6,8 @@ K=1;/*Autorifleman(5) count*/
 L=1;/*RPG count(6)*/
 U=1;/*RPG ASST count(7)*/
 Y=1;/*rifleman count(8)*/
-BLU_GearNames = [["<t color='#FF0000'>Platoon Leader", "REB_PL", "3rd HQ", 0],["Medic","REB_MED","3rd HQ",0],["<t color='#FF0000'>Squad Leader", "REB_SL",(format ["%1 Squad", O]), 1],["<t color='#FF0000'>Efreitor", "REB_EFR", (format ["%1 Squad", O]), 0],["Autorifleman", "REB_RPK", (format ["%1 Squad", O]), 0],["RPG Grenadier", "REB_RPG", (format ["%1 Squad", O]), 0],
-["RPG Assistant", "REB_RPGASST", (format ["%1 Squad", O]), 0],["Rifleman", "REB_RF", (format ["%1 Squad", O]), 0],["<t color='#FF0000'>SPG Commander","REB_SPGC","SPG Crew",0],["SPG Driver","REB_RF","SPG Crew",0]];
+BLU_GearNames = [["<t color='#FF0000'>Platoon Leader", "REB_PL", "3rd HQ", 1],["Medic","REB_MED","3rd HQ",1],["<t color='#FF0000'>Squad Leader", "REB_SL",(format ["%1 Squad", O]), 2],["<t color='#FF0000'>Efreitor", "REB_EFR", (format ["%1 Squad", O]), 2],["Autorifleman", "REB_RPK", (format ["%1 Squad", O]), 2],["RPG Grenadier", "REB_RPG", (format ["%1 Squad", O]), 2],
+["RPG Assistant", "REB_RPGASST", (format ["%1 Squad", O]), 2],["Rifleman", "REB_RF", (format ["%1 Squad", O]), 6],["<t color='#FF0000'>SPG Commander","REB_SPGC","SPG Crew",1],["SPG Driver","REB_RF","SPG Crew",1]];
 {
   box addAction [_x # 0, "gearChooser.sqf", [_forEachIndex]];
 } forEach BLU_GearNames;
