@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=609;
+	toggles=1633;
 	class ItemIDProvider
 	{
 		nextID=5108;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3233;
+		nextID=3313;
 	};
 	class Camera
 	{
-		pos[]={10365.65,117.04455,7993.4424};
-		dir[]={0.48613647,-0.62479812,0.61118627};
-		up[]={0.38893494,0.78074121,0.48898032};
-		aside[]={0.78269947,3.4286641e-006,-0.62256283};
+		pos[]={10119.665,172.69594,9778.5576};
+		dir[]={-0.24916764,-0.57912487,-0.77638555};
+		up[]={-0.17697281,0.81518465,-0.55143148};
+		aside[]={-0.95225406,3.7073623e-006,0.30561447};
 	};
 };
 binarizationWanted=0;
@@ -44035,7 +44035,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={10468.687,55.16058,8427.8389};
+						position[]={10468.689,55.160076,8427.8389};
 					};
 					areaSize[]={1,-1,1};
 					id=4582;
@@ -44613,7 +44613,7 @@ class Mission
 				};
 			};
 			id=3291;
-			atlOffset=-3.7401123;
+			atlOffset=-3.7401161;
 		};
 		class Item8
 		{
@@ -78310,7 +78310,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="SETUPSEP";
-			state=1;
 			class Entities
 			{
 				items=3;
@@ -78346,7 +78345,7 @@ class Mission
 				class Item2
 				{
 					dataType="Marker";
-					position[]={10096.717,16.568001,9480.709};
+					position[]={10096.717,16.568001,9555.0664};
 					name="RECONSETUP";
 					markerType="RECTANGLE";
 					type="rectangle";
@@ -78355,11 +78354,11 @@ class Mission
 					b=15.26;
 					angle=270;
 					id=4124;
-					atlOffset=-8.2628384;
+					atlOffset=-4.1698914;
 				};
 			};
 			id=4107;
-			atlOffset=-1.9554472;
+			atlOffset=-1.3927383;
 		};
 		class Item54
 		{
