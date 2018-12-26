@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3313;
+		nextID=3553;
 	};
 	class Camera
 	{
-		pos[]={10119.665,172.69594,9778.5576};
-		dir[]={-0.24916764,-0.57912487,-0.77638555};
-		up[]={-0.17697281,0.81518465,-0.55143148};
-		aside[]={-0.95225406,3.7073623e-006,0.30561447};
+		pos[]={10603.155,178.33365,8760.1807};
+		dir[]={0.041912705,-0.5046888,0.86228728};
+		up[]={0.024506444,0.86324638,0.50418687};
+		aside[]={0.99882513,2.1199776e-007,-0.048549067};
 	};
 };
 binarizationWanted=0;
@@ -490,7 +490,7 @@ randomSeed=9272336;
 class ScenarioData
 {
 	author="Blue & Gkenny";
-	onLoadMission="This isn't my first rodeo , or is it? ~ Blue";
+	onLoadMission="What did I tell you about resurrecting missions. ~ Gkenny";
 	loadScreen="images\BORRIS.JPG";
 	disabledAI=1;
 	class Header
@@ -897,7 +897,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=66;
+		items=58;
 		class Item0
 		{
 			dataType="Layer";
@@ -44035,7 +44035,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={10468.689,55.160076,8427.8389};
+						position[]={10468.687,55.160671,8427.8398};
 					};
 					areaSize[]={1,-1,1};
 					id=4582;
@@ -44613,7 +44613,7 @@ class Mission
 				};
 			};
 			id=3291;
-			atlOffset=-3.7401161;
+			atlOffset=-3.7401123;
 		};
 		class Item8
 		{
@@ -50973,6 +50973,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="SEPRATIST FORCES";
+			state=1;
 			class Entities
 			{
 				items=17;
@@ -55917,6 +55918,7 @@ class Mission
 					{
 					};
 					id=3930;
+					atlOffset=30;
 				};
 				class Item11
 				{
@@ -57323,6 +57325,7 @@ class Mission
 					{
 					};
 					id=3947;
+					atlOffset=30;
 				};
 				class Item12
 				{
@@ -58737,6 +58740,7 @@ class Mission
 						formation="FILE";
 					};
 					id=3960;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -60169,6 +60173,7 @@ class Mission
 						formation="FILE";
 					};
 					id=3970;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -60524,7 +60529,7 @@ class Mission
 						name="MORTAR";
 					};
 					id=3980;
-					atlOffset=-0.050000191;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -61348,6 +61353,7 @@ class Mission
 					{
 					};
 					id=4286;
+					atlOffset=30;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -61391,7 +61397,7 @@ class Mission
 				};
 			};
 			id=3846;
-			atlOffset=0.30945778;
+			atlOffset=32.143425;
 		};
 		class Item10
 		{
@@ -61400,7 +61406,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=10;
+				items=18;
 				class Item0
 				{
 					dataType="Layer";
@@ -64270,14 +64276,87 @@ class Mission
 					id=5020;
 					atlOffset=-0.00043487549;
 				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={11735.436,104.601,9048.9111};
+					name="1mcp";
+					type="Empty";
+					id=5080;
+					atlOffset=-0.0023574829;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={10960.366,38.176998,9589.2109};
+					name="32mcb";
+					type="Empty";
+					id=5082;
+					atlOffset=-0.00043487549;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={9272.9502,83.665001,9265.9102};
+					name="33mcb";
+					type="Empty";
+					id=5079;
+					atlOffset=0.00022125244;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={10820.795,10.801,6916.8921};
+					name="kovrov";
+					type="Empty";
+					id=5078;
+					atlOffset=-0.00040340424;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={10511.125,44.541,8132.689};
+					name="objdima";
+					type="Empty";
+					id=5077;
+					atlOffset=0.00045394897;
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={10096.651,22.643,9528.4082};
+					name="radon";
+					type="Empty";
+					id=5083;
+					atlOffset=0.00042152405;
+				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={10260.05,17.833,9645.5029};
+					name="sep_startpos";
+					type="Empty";
+					id=5075;
+					atlOffset=0.00019073486;
+				};
+				class Item17
+				{
+					dataType="Marker";
+					position[]={11656.767,97.394997,8031.959};
+					name="Tob";
+					type="Empty";
+					id=5081;
+					atlOffset=0.00047302246;
+				};
 			};
 			id=4113;
-			atlOffset=-0.27210999;
+			atlOffset=-46.511692;
 		};
 		class Item11
 		{
 			dataType="Layer";
 			name="SEP Markers";
+			state=1;
 			class Entities
 			{
 				items=10;
@@ -78310,6 +78389,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="SETUPSEP";
+			state=1;
 			class Entities
 			{
 				items=3;
@@ -78556,78 +78636,6 @@ class Mission
 		};
 		class Item56
 		{
-			dataType="Marker";
-			position[]={10260.05,17.833,9645.5029};
-			name="sep_startpos";
-			type="Empty";
-			id=5075;
-			atlOffset=0.00019073486;
-		};
-		class Item57
-		{
-			dataType="Marker";
-			position[]={10511.125,44.541,8132.689};
-			name="objdima";
-			type="Empty";
-			id=5077;
-			atlOffset=0.00045394897;
-		};
-		class Item58
-		{
-			dataType="Marker";
-			position[]={10820.795,10.801,6916.8921};
-			name="kovrov";
-			type="Empty";
-			id=5078;
-			atlOffset=-0.00040340424;
-		};
-		class Item59
-		{
-			dataType="Marker";
-			position[]={9272.9502,83.665001,9265.9102};
-			name="33mcb";
-			type="Empty";
-			id=5079;
-			atlOffset=0.00022125244;
-		};
-		class Item60
-		{
-			dataType="Marker";
-			position[]={11735.436,104.601,9048.9111};
-			name="1mcp";
-			type="Empty";
-			id=5080;
-			atlOffset=-0.0023574829;
-		};
-		class Item61
-		{
-			dataType="Marker";
-			position[]={11656.767,97.394997,8031.959};
-			name="Tob";
-			type="Empty";
-			id=5081;
-			atlOffset=0.00047302246;
-		};
-		class Item62
-		{
-			dataType="Marker";
-			position[]={10960.366,38.176998,9589.2109};
-			name="32mcb";
-			type="Empty";
-			id=5082;
-			atlOffset=-0.00043487549;
-		};
-		class Item63
-		{
-			dataType="Marker";
-			position[]={10096.651,22.643,9528.4082};
-			name="radon";
-			type="Empty";
-			id=5083;
-			atlOffset=0.00042152405;
-		};
-		class Item64
-		{
 			dataType="Logic";
 			class PositionInfo
 			{
@@ -78681,7 +78689,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item65
+		class Item57
 		{
 			dataType="Object";
 			class PositionInfo
