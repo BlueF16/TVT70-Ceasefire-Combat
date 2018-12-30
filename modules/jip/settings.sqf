@@ -2,7 +2,7 @@
 
 //JIPDENYTIME
 //After how many seconds should a player be considered JIP (this only applies if you are using JIPTYPE "DENY").
-FW_JIPDENYTIME = 1200;
+FW_JIPDENYTIME = 3000;
 
 switch (side player) do {
 
