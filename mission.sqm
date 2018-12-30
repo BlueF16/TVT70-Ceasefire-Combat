@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3553;
+		nextID=3593;
 	};
 	class Camera
 	{
@@ -44035,7 +44035,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={10468.687,55.160671,8427.8398};
+						position[]={10468.688,55.160412,8427.8389};
 					};
 					areaSize[]={1,-1,1};
 					id=4582;

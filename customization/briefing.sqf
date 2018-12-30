@@ -233,15 +233,15 @@ case west: { //If player is west he receives this briefing
 			ENDTAB;
 			NEWTAB("APPENDIX I: AGS Operation Instructions")
 			There is a good chance that your AGS will be ARMA'ed if you are not careful, follow the bellow guidelines to ensure it doesn't get glitched:
-			<br/> 1 - Always make sure when you are deploying the AGS there is empty space infront of the tripod bag to ensure it is not going to spawning inside a trench wall and become destroyed. NOTE: The AGS will not spawn ontop of the bag but 1-1.5 meters infront of the bag.
+			<br/> 1 - Always make sure when you are deploying the AGS there is an empty space infront of the tripod bag. This is to avoid the AGS from spawning inside the trench, leading to its destruction. NOTE: The AGS will not spawn ontop of the bag, but 1-1.5 meters infront of the bag in the direction you are facing.
 			<br/>
-			<br/> 2 - Below is a picture of an AGS position. To setup in any of the two AGS positions you must CARRY the AGS inside the bunker as far as you can get it inside. NOTE: The AGS will be dropped if you try to crouch while you are carrying the AGS.
+			<br/> 2 - To setup in any of the two AGS positions you must CARRY the AGS inside the bunker as far as you can get it inside. NOTE: The AGS will be dropped if you try to crouch while you are carrying the AGS.
 			<br/>
 			<br/> 3 - When leaving the AGS position, Instantly go prone in order not to get stuck in the bunker.
 			<br/>
 			<br/> 4 - When moving through the trench it is recommended to dismantle the AGS in order not to kill anyone with the AGS object while moving.
 			<br/>
-			<br/> 5 - To reach the the AGS position above <marker name='Trench B'>Trench B</marker> you will have to climb using Enhcaned Movement mod.
+			<br/> 5 - To reach the the AGS position above <marker name='Trench B'>Trench B</marker> you will have to climb using Enhcaned Movement.
 			<br/>
 			ENDTAB;
 			NEWTAB("APPENDIX II: BMP & AGS Fighting Positions")
